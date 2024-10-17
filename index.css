@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+::-webkit-scrollbar {
+    display: hidden
+}
+
+body {
+    font-family: 'Inter';
+    overflow: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none
+}
+
+.icon {
+    width: 153px;
+}
+
+.title {
+    margin: 30px 30px 12px;
+    font-size: 30px;
+}
+
+.desc {
+    margin: 0px 30px 12px;
+    font-size: 14px;
+}
+
+.login-btn {
+    border-width: 0;
+    background-color: rgba(255, 44, 101, 1);
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1;
+    border-radius: 5px;
+    padding: 15px 24px;
+    margin: 0px 30px 30px;
+    opacity: 1;
+    width: calc(100% - 60px);
+}
+
+.login-btn:hover {
+    opacity: 0.8;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    max-width: 420px;
+    border: solid 1px #e5e8eb;
+    border-radius: 6px;
+    row-gap: 40px;
+}
+
+.bubble {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 60px;
+    flex-grow: 1;
+}
+
+.computer {
+    display: flex;
+    background: linear-gradient(to bottom, rgba(255, 255, 255), rgba(0, 0, 0, 0.3));
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.micode {
+    width: 35%;
+}
+
+.screen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+@media screen and (max-width: 660px) {
+    .computer {
+        visibility: hidden;
+    }
+}
